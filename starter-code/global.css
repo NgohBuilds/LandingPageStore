@@ -1,0 +1,73 @@
+/*Font- Family import */
+
+@font-face {
+    font-family: inter-regular ;
+    src: url(./assets/fonts/inter/static/Inter_18pt-Regular.ttf);
+}
+@font-face {
+    font-family: inter-semiBold ;
+    src: url(./assets/fonts/inter/static/Inter_18pt-SemiBold.ttf);
+}@font-face {
+    font-family: Martian-Mono-semi-bold ;
+    src: url(./assets/fonts/martian-mono/static/MartianMono-SemiBold.ttf);
+}
+@font-face {
+    font-family: Martian-Mono-bold ;
+    src: url(./assets/fonts/martian-mono/static/MartianMono-Bold.ttf);
+}@font-face {
+    font-family: Martian-Mono-regular ;
+    src: url(./assets/fonts/martian-mono/static/MartianMono-Regular.ttf);
+}
+:root{
+    /*Style-Guide Color*/
+    --Neutral_900 : #062630;
+    --Neutral_700 : #385159;
+    --Neutral_200 : #E6E1DF;
+    --Neutral_100 : #FAF5F3;
+    --Neutral_0 : #ffffff;
+
+    /*Light Salmon*/
+    --Light-Salmon_500:#FEA36F;
+    --Light-Salmon_100:#FFE2D1;
+    --Light-Salmon_50:#FFF5EF;
+
+    /*Gradient*/
+    --text-gradient : linear-gradient(107deg,#FF9A60 -11.37%, #062630 61.84%);
+    --gradient : linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+
+    /*Style-Guide Typography*/
+
+    /*
+    Preset-1 : Title Hero Section
+    preset-2 : Title other section
+    preset-3 : section Citation , price 
+    preset-4 : subscribe title section
+    preset-5 : paragraph , 
+    preset-6 : ButtonText
+    preset-7: etiquette */
+    /*Preset-1*/
+    --Hero-title-section-size : clamp(2.4rem, 1.8468rem + 1.4085vw, 3.9rem);
+    --Martian-Bold: Martian-Mono-bold ;
+    /*Preset-2*/
+    --Global-title-section-size : clamp(2.1rem, 1.7729rem + 0.9390vw, 3.1rem);
+    --Martian-semiBold: Martian-Mono-semi-bold;
+
+    /*Preset-3*/
+    --price-citation-size : clamp(2.1rem, 2.3451rem + -0.5869vw, 1.5rem)
+;
+
+    /*Preset-4*/
+    --subscribe-title-section : 1.5rem;
+    --Martian-regular : Martian-Mono-regular;
+    /*Preset-5*/
+    --paragraph-text-size: 1.25rem;
+    --inter-regular : inter-regular ;
+    --inter-semiBold : inter-semiBold;
+    /*Preset-6*/
+    --button-text-size : 18px;
+    --button-mobile-text-size : 1rem;
+    /*Preset-7*/
+    --etiquette : 14px;
+    
+}
+
