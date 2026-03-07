@@ -1,1 +1,52 @@
 @import url(./global.css);
+
+/*  General Setting */
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /*Refactoring later*/
+    padding-inline: 16px;
+}
+h1{
+    font-family: var(--Martian-Bold);
+}
+p{
+    font-size: var(--paragraph-text-size);
+    color: var(--Neutral_700);
+    font-family: var(--inter-regular);
+}
+section{
+    margin-inline: auto;
+
+}
+.side_img{
+   width: 40%;
+}
+button{
+    color:var(--Neutral_900) ;
+    font-size: var(--button-text-size);
+    font-family: var(--Martian-semiBold);
+    outline: 2px solid var(--Neutral_900);
+    padding: .75rem;
+    border-radius: 8px;
+    background-color: var(--Light-Salmon_50);
+    border: none;
+    transition: 3ms ease-in-out 1ms;
+}
+button img{
+    vertical-align: middle;
+}
+button:hover{
+    background-image: var(--gradient);
+    
+}
+#hero_title{
+    color: transparent;
+    background-clip: text;
+    background-image: var(--text-gradient);
+}
+
+

@@ -9,13 +9,13 @@
   <title> Tech book club Landing Page </title>
 </head>
 <body>
-  <section>
     <header>
      <img src="./assets/images/logo.svg" alt="Tech club Logo">
   </header>
+  <section class="section_with_img">
   <main>
     <div class="left_main">
-      <h1>
+      <h1 id="hero_title">
           Join the ultimate tech book club
       </h1>
       <p>
@@ -28,18 +28,21 @@
         <img src="./assets/images/image-avatars.webp" alt="avatars">
         <div>
           <img src="./assets/images/icon-star.svg" alt="stars_svg">
-          <span class="etiquette">  200+ developers joined already
-</span>
+          <img src="./assets/images/icon-star.svg" alt="stars_svg">
+          <img src="./assets/images/icon-star.svg" alt="stars_svg">
+          <img src="./assets/images/icon-star.svg" alt="stars_svg">
+          <img src="./assets/images/icon-star.svg" alt="stars_svg">
+          <span class="etiquette">  200+ developers joined already</span>
         </div>
       </div>
     </div>
-    <img src="./assets/images/image-hero-desktop.webp" alt="image-hero-desktop">
   </main>
+  <img class="side_img" src="./assets/images/image-hero-desktop.webp" alt="image-hero-desktop">
   </section>
 
   <!-- READ TOGETHER SECTION -->
-   <section>
-    <img src="./assets/images/image-read-together-desktop.webp" alt="image-read-together-desktop">
+   <section class="section_with_img">
+    <img class="side_img" src="./assets/images/image-read-together-desktop.webp" alt="image-read-together-desktop">
     <div class="read_together_right">
       <h1>Read together, grow together</h1>
       <div class="check_Para">
@@ -62,7 +65,7 @@
    </section>
 
    <!-- NOT YOUR AVERAGE BOOK CLUB -->
-    <section>
+    <section class="section_with_img">
       <h1>  Not your average book club</h1>
       <div class="left_not_average">
         <p> Connect with a community that speaks your language - from Python to TypeScript and everything in between. Our discussions blend technical depth with practical applications.</p>
@@ -70,7 +73,7 @@
       <div class="stack">
         <img src="./assets/images/logos-tech.svg" alt="logos-tech">
       </div>
-      <img src="./assets/images/image-not-average-desktop.webp" alt="image-not-average-desktop">
+      <img class="side_img" src="./assets/images/image-not-average-desktop.webp" alt="image-not-average-desktop">
     </section>
 
     <!--YOUR TECH READING JOURNEY-->
@@ -151,48 +154,51 @@
           <button>TALK TO US</button>
         </div>
       </div>
-      
-            
+  
      </section>
 
- 
+     <!--THIS BOOK CLUB ... -->
+     <section>
+      <div class="star_container">
+        <img src="./assets/images/icon-star.svg" alt="icon-star">
+        <img src="./assets/images/icon-star.svg" alt="icon-star">
+        <img src="./assets/images/icon-star.svg" alt="icon-star">
+        <img src="./assets/images/icon-star.svg" alt="icon-star">
+        <img src="./assets/images/icon-star.svg" alt="icon-star">
+      </div>
+      <cite>
+        <blockquote> "This book club transformed my technical reading from a solitary 
+           activity into an enriching community experience. The discussions 
+           are gold!"
+        </blockquote>
+        <span id="Author">Sarah Chen, Software Architect</span>
+      </cite>
+     </section>
 
-
-
-
-  1 book/month
-  Online forums
-
-  Subscribe now
-
-  Pro
-  $29/month
-
-  2 books/month
-  Virtual meetups
-
-  Subscribe now
-
-  Enterprise
-  Custom
-
-  Team access
-  Private sessions
-
-  Talk to us
-
-  "This book club transformed my technical reading from a solitary 
-  activity into an enriching community experience. The discussions 
-  are gold!"
-
-  Sarah Chen, Software Architect
-
-  Ready to debug your reading list?
-
-  Review membership options
-  200+ developers joined already
-
-  © 2024 - Tech Book Club
-
+     <!--READY TO DEBUG SECTION -->
+     <footer>
+      <h1>Ready to debug your reading list?</h1>
+      <button>Review membership options <img src="./assets/images/icon-arrow-up.svg" alt="arrow-up-svg"></button>
+      <div class="left_start">
+        <img class="side_img" src="./assets/images/image-avatars.webp" alt="avatars">
+        <div>
+           <div class="stars">
+            <img src="./assets/images/icon-star.svg" alt="stars_svg">
+            <img src="./assets/images/icon-star.svg" alt="stars_svg">
+            <img src="./assets/images/icon-star.svg" alt="stars_svg">
+            <img src="./assets/images/icon-star.svg" alt="stars_svg">
+            <img src="./assets/images/icon-star.svg" alt="stars_svg">
+           </div>
+          <span class="etiquette">200+ developers joined already</span>
+        </div>
+      </div>
+      <div class="footer_Content">
+        <address> © 2024 - Tech Book Club</address>
+        <div class="logo_footer">
+          <img src="./assets/images/logo-bluesky.svg" alt="logo-bluesky">
+          <img src="./assets/images/logo-linkedin.svg" alt="logo-linkedin">
+        </div>
+      </div>
+     </footer>
 </body>
 </html>
