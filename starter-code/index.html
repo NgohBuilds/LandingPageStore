@@ -9,7 +9,7 @@
   <title> Tech book club Landing Page </title>
 </head>
 <body>
-    <header>
+  <header>
      <img src="./assets/images/logo.svg" alt="Tech club Logo">
   </header>
   <section class="section_with_img">
@@ -37,7 +37,20 @@
       </div>
     </div>
   </main>
-  <img class="side_img" src="./assets/images/image-hero-desktop.webp" alt="image-hero-desktop">
+<img
+  src="./assets/images/image-hero-mobile.webp"
+  srcset="
+    ./assets/images/image-hero-mobile.webp 375w,
+    ./assets/images/image-hero-tablet.webp 768w,
+    ./assets/images/image-hero-desktop.webp 1024w
+  "
+  sizes="
+    (max-width: 640px) 100vw,
+    (max-width: 768px) 100vw,
+    (max-width: 1440px) 20vw
+  "
+  loading="lazy"
+  alt="Hero image">
   </section>
 
   <!-- READ TOGETHER SECTION -->
@@ -66,13 +79,15 @@
 
    <!-- NOT YOUR AVERAGE BOOK CLUB -->
     <section class="section_with_img">
-      <h1>  Not your average book club</h1>
-      <div class="left_not_average">
-        <p> Connect with a community that speaks your language - from Python to TypeScript and everything in between. Our discussions blend technical depth with practical applications.</p>
+      <div class="left_side">
+         <h1>  Not your average book club</h1>
+        <div class="left_not_average">
+          <p> Connect with a community that speaks your language - from Python to TypeScript and everything in between. Our discussions blend technical depth with practical applications.</p>
+        </div>
       </div>
-      <div class="stack">
+      <!-- <div class="stack">
         <img src="./assets/images/logos-tech.svg" alt="logos-tech">
-      </div>
+      </div> -->
       <img class="side_img" src="./assets/images/image-not-average-desktop.webp" alt="image-not-average-desktop">
     </section>
 
