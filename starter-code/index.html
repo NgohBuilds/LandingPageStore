@@ -25,13 +25,15 @@
       </p>
       <button> <span>Review membership options</span> <img src="./assets/images/icon-arrow-down.svg" alt="arrow_down"> </button>
       <div class="left_start">
-        <img src="./assets/images/image-avatars.webp" alt="avatars">
+        <img class="avatars" src="./assets/images/image-avatars.webp" alt="avatars">
         <div>
-          <img src="./assets/images/icon-star.svg" alt="stars_svg">
-          <img src="./assets/images/icon-star.svg" alt="stars_svg">
-          <img src="./assets/images/icon-star.svg" alt="stars_svg">
-          <img src="./assets/images/icon-star.svg" alt="stars_svg">
-          <img src="./assets/images/icon-star.svg" alt="stars_svg">
+          <div class="star_container">
+            <img src="./assets/images/icon-star.svg" alt="stars_svg">
+            <img src="./assets/images/icon-star.svg" alt="stars_svg">
+           <img src="./assets/images/icon-star.svg" alt="stars_svg">
+            <img src="./assets/images/icon-star.svg" alt="stars_svg">
+            <img src="./assets/images/icon-star.svg" alt="stars_svg">
+          </div>
           <span class="etiquette">  200+ developers joined already</span>
         </div>
       </div>
@@ -142,9 +144,10 @@
     </section>
 
     <!-- Membership options -->
-     <section>
+     <section id="membership_opt_section">
       <h1>Membership options</h1>
-      <div class="card_Price">
+      <div id="price_container">
+        <div class="card_Price">
         <h1>Starter</h1>
         <span class="price">$19</span>
         <span class="month">/month</span>
@@ -192,6 +195,7 @@
         </div>
       </div>
   
+      </div>
      </section>
 
      <!--THIS BOOK CLUB ... -->

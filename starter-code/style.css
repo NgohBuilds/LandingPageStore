@@ -7,19 +7,22 @@
     box-sizing: border-box;
 }
 body{
-    /*Refactoring later*/
     padding-inline: clamp(12px, calc(-22.286px + 10.714vw), 132px);
 }
-h1{
-    font-family: var(--Martian-Bold);
-}
-p{
+
+p , .card_Price span{
     font-size: var(--paragraph-text-size);
     color: var(--Neutral_700);
     font-family: var(--inter-regular);
 }
+h1 , .card_Price >:nth-child(2){
+    font-family: var(--Martian-Bold);
+    color: var(--Neutral_900);  
+}
 
-
+h1 , p {
+ margin-block: clamp(1.25rem,5%,2.5rem);
+}
 button{
     color:var(--Neutral_900) ;
     font-size: var(--button-text-size);
@@ -55,22 +58,103 @@ img{
     border-radius: 8px ;
     object-fit: cover;
 }
-section .bgSquared{
+.left_start , .left_start>div{
+    display: flex;
+}
+.left_start {
+    flex-wrap: wrap;
+}
+.left_start>div{
+    flex-direction: column;
+}
+.left_start .avatars{
+    max-height: 3rem ;
+    height: 5%;
+    vertical-align: middle;
+}
+
+
+
+/*STYLING SECTION ITEMS : section by section */
+/*READ TOGETHER SECTION*/
+.check_Para{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: .5rem;
+    margin-bottom: 5%;
+}
+.check_Para p{
+     margin-block: 0;
+}
+
+/*MEMBERSHIP OPTIONS SECTION */
+#price_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    
+}
+
+.card_Price{
+    outline: 2px solid var(--Neutral_900);
+    border-radius: 8px ;
+    min-width: calc(640px/2 - 1rem);
+    width: calc(100%/3 - 1rem);
+    padding-block: 1rem;
+    max-width: 20rem;
 
 }
+.card_Price span+div {
+    border-top: 1px solid var(--Neutral_700);
+    padding-top: .5rem;
+}
+.card_Price>*{
+    margin: 5% ;
+}
+
+.card_Price>div > div{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.card_Price>*>*{
+    margin-block: .5rem;
+}
+.card_Price>h1{
+    font-size: calc(var(--price-citation-size));
+}
+.card_Price button{
+    width: 100%;
+}
+
+/*RESPONSIVE DESIGN WITH MEDIA QUERIES*/
+@media screen and  (max-width: 540px) {
+ .card_Price{
+            margin-inline:auto;
+    }
+
+}
+
 @media screen and (max-width:768px) {
  .section_with_img{
     flex-direction: column;
  }
-
+.section_with_img .side_img{
+    order: 2;
+}
     }
+
 @media screen and (min-width:1024px){
 
     .section_with_img{
     row-gap: 1.5rem;
+    height: 100vh;
     justify-content: space-between;
+    align-items: center;
    }
     .section_with_img >*{
     width: calc((100% /2) - 1.5rem);
+    height: 60%;
     } 
+ 
 }
