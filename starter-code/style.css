@@ -8,7 +8,7 @@
 }
 body{
     /*Refactoring later*/
-    padding-inline: 16px;
+    padding-inline: clamp(12px, calc(-22.286px + 10.714vw), 132px);
 }
 h1{
     font-family: var(--Martian-Bold);
@@ -18,13 +18,8 @@ p{
     color: var(--Neutral_700);
     font-family: var(--inter-regular);
 }
-section{
-    margin-inline: auto;
 
-}
-.side_img{
-   width: 40%;
-}
+
 button{
     color:var(--Neutral_900) ;
     font-size: var(--button-text-size);
@@ -51,17 +46,31 @@ button:hover{
 img{
     object-fit: contain;
 }
+
 .section_with_img{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
 }
 .section_with_img >img{
     border-radius: 8px ;
-    object-fit: contain;
+    object-fit: cover;
+}
+section .bgSquared{
 
 }
-@media  screen and (min-width:1024px) {
-   .section_with_img >* {
-    flex: 1;
-} 
+@media screen and (max-width:768px) {
+ .section_with_img{
+    flex-direction: column;
+ }
+
+    }
+@media screen and (min-width:1024px){
+
+    .section_with_img{
+    row-gap: 1.5rem;
+    justify-content: space-between;
+   }
+    .section_with_img >*{
+    width: calc((100% /2) - 1.5rem);
+    } 
 }
