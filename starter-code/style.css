@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+section{
     padding-inline: clamp(12px, calc(-22.286px + 10.714vw), 132px);
 }
 
@@ -39,7 +39,9 @@ button img{
 }
 button:hover{
     background-image: var(--gradient);
-    
+}
+button:focus{
+    outline: 2px dashed var(--Neutral_900);
 }
 #hero_title{
     color: transparent;
@@ -86,6 +88,20 @@ img{
 .check_Para p{
      margin-block: 0;
 }
+#hero_grid_Background, header , .card_Price:nth-child(2) , #bgSquared {
+    background-image: 
+        url(./assets/images/pattern-light-bg.svg),
+        url(./assets/images/pattern-glow.svg);
+
+    background-position: 
+        100% ,
+        right bottom;
+
+    background-repeat: no-repeat, no-repeat;
+
+    background-color: var(--Neutral_100);
+    background-size: auto , 50%;
+}
 
 /*MEMBERSHIP OPTIONS SECTION */
 #price_container{
@@ -96,16 +112,17 @@ img{
 }
 
 .card_Price{
-    outline: 2px solid var(--Neutral_900);
+    outline: 2px solid var( --Neutral_200 );
     border-radius: 8px ;
     min-width: calc(640px/2 - 1rem);
     width: calc(100%/3 - 1rem);
     padding-block: 1rem;
     max-width: 20rem;
+    box-shadow: 4px 4px .5rem var(--Neutral_100 ) ;
 
 }
 .card_Price span+div {
-    border-top: 1px solid var(--Neutral_700);
+    border-top: 1px solid var(--Neutral_200);
     padding-top: .5rem;
 }
 .card_Price>*{
@@ -126,6 +143,14 @@ img{
 .card_Price button{
     width: 100%;
 }
+
+/*STYLING FOOTER*/
+footer{
+    background: url(./assets/images/pattern-dark-bg.svg) var(--Neutral_900);
+ }
+ footer>*{
+    color: var(--Neutral_0);
+ }
 
 /*RESPONSIVE DESIGN WITH MEDIA QUERIES*/
 @media screen and  (max-width: 540px) {
