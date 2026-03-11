@@ -144,6 +144,45 @@ img{
     width: 100%;
 }
 
+
+/*TECH READING JOURNEY SECTION*/
+#Reading_Journey_Container{
+    display: flex;
+    gap: 5%;
+}
+#Reading_Journey_Container >* , #Reading_Journey_Container p{
+    font-family: var(--Martian-semiBold);
+    flex: 1 1 auto;
+    font-size: calc(var(--etiquette) + 4px);
+}
+#Reading_Journey_Container .days_arrowImages{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Reading_Journey_Container .days_arrowImages>span{
+    display: inline-block;
+    border: 2px solid var(--Neutral_900);
+    padding: .5rem .8rem;
+    height: fit-content;
+    border-radius: 4px;
+}
+
+/*STYLING TESTIMONY SECTION*/
+cite blockquote{
+    font-size: var(--price-citation-size);
+    font-style: normal;
+    font-family: var(--Martian-semiBold);
+}
+cite #Author{
+    /*
+    -paragraph-text-size: 1.25rem;
+    --inter-regular : inter-regular ;*/
+    font-size: var(--paragraph-text-size);
+    font-family: var(--inter-regular);
+    font-style: normal;
+}
+
 /*STYLING FOOTER*/
 footer{
     background: url(./assets/images/pattern-dark-bg.svg) var(--Neutral_900);
@@ -151,7 +190,30 @@ footer{
  footer>*{
     color: var(--Neutral_0);
  }
-
+ footer button{
+    outline: 2px solid var(--Neutral_0);
+ }
+footer #avatars_Start_footer{
+    display: flex;
+}
+footer #avatars_Start_footer>*{
+    flex: 1 1 auto;
+}
+footer #avatars_Start_footer {
+    width: fit-content;  
+}
+footer button , #avatars_Start_footer{
+    min-width: 320px;
+    width: 45%;
+}
+footer #avatars_Start_footer >div{
+    display: flex;
+    flex-direction: column;
+}
+footer #footer_Content{
+    display: flex;
+    justify-content: space-between;
+}
 /*RESPONSIVE DESIGN WITH MEDIA QUERIES*/
 @media screen and  (max-width: 540px) {
  .card_Price{
@@ -167,7 +229,14 @@ footer{
 .section_with_img .side_img{
     order: 2;
 }
-    }
+#Reading_Journey_Container{
+    flex-direction: column;
+}
+#Reading_Journey_Container img{
+    display: none;
+}
+
+}
 
 @media screen and (min-width:1024px){
 
@@ -183,3 +252,4 @@ footer{
     } 
  
 }
+
