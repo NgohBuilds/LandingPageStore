@@ -1,12 +1,19 @@
 @import url(./global.css);
 
 /*  General Setting */
+body>*:not(header , footer)
+{
+    margin-bottom: clamp(3.556rem, calc(2.141rem + 7.955vw), 6.667rem);
+}
 *,::after,::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-section{
+header{
+    padding-top:  clamp(1.333rem, calc(1.131rem + 1.136vw), 1.778rem);
+}
+section ,footer,header{
     padding-inline: clamp(12px, calc(-22.286px + 10.714vw), 132px);
 }
 
@@ -63,18 +70,21 @@ img{
 .left_start , .left_start>div{
     display: flex;
 }
-.left_start {
-    flex-wrap: wrap;
-}
+
 .left_start>div{
     flex-direction: column;
 }
-.left_start .avatars{
-    max-height: 3rem ;
-    height: 5%;
-    vertical-align: middle;
-}
 
+.left_start .avatars{
+    max-height: 2rem ;
+    height: 5%;
+}
+#bgSquared h1,#membership_opt_section h1,#Testimony h1 ,footer h1{
+    text-align: center;
+    text-wrap: balance;
+    padding: 1rem;
+
+} 
 
 
 /*STYLING SECTION ITEMS : section by section */
@@ -175,9 +185,6 @@ cite blockquote{
     font-family: var(--Martian-semiBold);
 }
 cite #Author{
-    /*
-    -paragraph-text-size: 1.25rem;
-    --inter-regular : inter-regular ;*/
     font-size: var(--paragraph-text-size);
     font-family: var(--inter-regular);
     font-style: normal;
@@ -186,12 +193,19 @@ cite #Author{
 /*STYLING FOOTER*/
 footer{
     background: url(./assets/images/pattern-dark-bg.svg) var(--Neutral_900);
+    padding: clamp(3.556rem, calc(3.151rem + 2.273vw), 4.444rem) auto;
  }
+ 
  footer>*{
     color: var(--Neutral_0);
  }
  footer button{
     outline: 2px solid var(--Neutral_0);
+    background: transparent;
+ }
+ footer button:hover{
+    background-image: linear-gradient(to right , rgba(255, 255, 255, 0.792),var(--Neutral_900) );
+    outline: 2px dashed var(--Neutral_0);
  }
 footer #avatars_Start_footer{
     display: flex;
@@ -202,9 +216,10 @@ footer #avatars_Start_footer>*{
 footer #avatars_Start_footer {
     width: fit-content;  
 }
-footer button , #avatars_Start_footer{
-    min-width: 320px;
+footer #avatars_Start_footer ,footer>button{
+    max-width: 380px;
     width: 45%;
+    min-width:calc(20rem - 5%);
 }
 footer #avatars_Start_footer >div{
     display: flex;
@@ -213,8 +228,27 @@ footer #avatars_Start_footer >div{
 footer #footer_Content{
     display: flex;
     justify-content: space-between;
+    margin-top: 4rem;
+    border-top: 1px solid var(--Neutral_0);
+    padding-top:clamp(1.333rem, calc(1.131rem + 1.136vw), 1.778rem);
 }
+footer #logo_footer{
+        display: flex;
+        gap: 1rem;
+    }
+    
 /*RESPONSIVE DESIGN WITH MEDIA QUERIES*/
+
+@media  screen and (max-width:425px) {
+    footer #footer_Content{
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem; 
+    }
+    
+
+}
+
 @media screen and  (max-width: 540px) {
  .card_Price{
             margin-inline:auto;
@@ -222,16 +256,16 @@ footer #footer_Content{
 
 }
 
+
+
 @media screen and (max-width:768px) {
- .section_with_img{
+ .section_with_img, #Reading_Journey_Container{
     flex-direction: column;
  }
 .section_with_img .side_img{
     order: 2;
 }
-#Reading_Journey_Container{
-    flex-direction: column;
-}
+
 #Reading_Journey_Container img{
     display: none;
 }
