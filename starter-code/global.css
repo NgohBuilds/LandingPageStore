@@ -53,10 +53,8 @@
     --Martian-semiBold: Martian-Mono-semi-bold;
 
     /*Preset-3*/
-    --price-citation-size : clamp(1.5rem, 2.3451rem + -0.5869vw, 1.75rem)
-;
-
-    /*Preset-4*/
+    --price-citation-size : clamp(1.5rem, 2.3451rem + -0.5869vw, 1.75rem);
+   /*Preset-4*/
     --subscribe-title-section : 1.5rem;
     --Martian-regular : Martian-Mono-regular;
     /*Preset-5*/

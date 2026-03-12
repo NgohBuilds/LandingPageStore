@@ -74,7 +74,9 @@ img{
 .left_start>div{
     flex-direction: column;
 }
-
+.left_start{
+    margin-block: 1.25rem;
+}
 .left_start .avatars{
     max-height: 2rem ;
     height: 5%;
@@ -178,16 +180,29 @@ img{
     border-radius: 4px;
 }
 
+.etiquette{
+    display: inline-block;
+    font-size: .5rem;
+    font-family: var(--Martian-semiBold);
+
+}
+
 /*STYLING TESTIMONY SECTION*/
+cite 
+{
+     text-align: left;
+}
 cite blockquote{
     font-size: var(--price-citation-size);
     font-style: normal;
     font-family: var(--Martian-semiBold);
+    text-wrap: balance;   
 }
+
 cite #Author{
-    font-size: var(--paragraph-text-size);
+    font-size: calc(var(--paragraph-text-size) - var(--paragraph-text-size)/4 );
     font-family: var(--inter-regular);
-    font-style: normal;
+    
 }
 
 /*STYLING FOOTER*/
@@ -202,6 +217,7 @@ footer{
  footer button{
     outline: 2px solid var(--Neutral_0);
     background: transparent;
+
  }
  footer button:hover{
     background-image: linear-gradient(to right , rgba(255, 255, 255, 0.792),var(--Neutral_900) );
@@ -246,7 +262,6 @@ footer #logo_footer{
         gap: .5rem; 
     }
     
-
 }
 
 @media screen and  (max-width: 540px) {
@@ -255,8 +270,6 @@ footer #logo_footer{
     }
 
 }
-
-
 
 @media screen and (max-width:768px) {
  .section_with_img, #Reading_Journey_Container{
@@ -284,6 +297,16 @@ footer #logo_footer{
     width: calc((100% /2) - 1.5rem);
     height: 60%;
     } 
+    #Testimony .star_container{
+    width: fit-content;
+    margin-inline: auto;
+}
  
+}
+@media screen and (min-width:768px){
+cite 
+{
+     text-align: center;
+}
 }
 
