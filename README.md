@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Link
 
-- Live Site URL: [tech book landing page](https://vercel.com/ngohbuilds-projects/tech-book-landing-page)
+- Live Site URL: [tech book landing page](https://tech-book-landing-page-zeta.vercel.app/)
 
 ## My process
 
